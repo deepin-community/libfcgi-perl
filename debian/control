@@ -1,0 +1,33 @@
+Source: libfcgi-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Ansgar Burchardt <ansgar@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               libfcgi-client-perl <!nocheck>,
+               libfcgi-dev (>= 2.4.2),
+               libtest-simple-perl <!nocheck>,
+               perl-xs-dev,
+               perl:native
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libfcgi-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libfcgi-perl.git
+Homepage: https://metacpan.org/release/FCGI
+Rules-Requires-Root: no
+
+Package: libfcgi-perl
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
+Description: helper module for FastCGI
+ FCGI is a simple Perl module for writing FastCGI applications. FastCGI is a
+ language-independent, scalable, open extension to CGI that provides faster
+ performance by keeping programs persistent in memory and allowing them to
+ handle multiple requests. This module provides the core interface needed to
+ write these applications.
+ .
+ For complex applications, you should consider a more full-featured solution
+ such as Plack or Catalyst (see libcatalyst-perl).
