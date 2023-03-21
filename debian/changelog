@@ -1,8 +1,12 @@
-libfcgi-perl (0.82+ds-1+u001) UNRELEASED; urgency=medium
+libfcgi-perl (0.82+ds-1deepin) unstable; urgency=medium
 
+  [ Debian Perl Group ]
   * update
 
- -- Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>  Fri, 27 May 2022 14:58:27 +0800
+  [ Yutao Meng ]
+  * Regulate version name
+
+ -- Yutao Meng <mengyutao@uniontech.com>  Tue, 21 Mar 2023 11:45:47 +0800
 
 libfcgi-perl (0.82+ds-1) unstable; urgency=medium
 
