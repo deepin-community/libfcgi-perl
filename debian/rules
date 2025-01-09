@@ -8,7 +8,12 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 %:
 	dh $@
 
+override_dh_auto_clean:
+	dh_auto_clean
+	[ ! -f $(CURDIR)/MANIFEST.SKIP.sav ] || mv $(CURDIR)/MANIFEST.SKIP.sav $(CURDIR)/MANIFEST.SKIP
+
 override_dh_auto_configure:
+	[ ! -f $(CURDIR)/MANIFEST.SKIP ] || cp $(CURDIR)/MANIFEST.SKIP $(CURDIR)/MANIFEST.SKIP.sav
 	dh_auto_configure -- --use-installed
 
 override_dh_fixperms:

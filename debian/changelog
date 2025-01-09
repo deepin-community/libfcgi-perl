@@ -1,12 +1,19 @@
-libfcgi-perl (0.82+ds-1deepin) unstable; urgency=medium
+libfcgi-perl (0.82+ds-3) unstable; urgency=medium
 
-  [ Debian Perl Group ]
-  * update
+  * Team upload.
+  * Backup and restore MANIFEST.SKIP which gets modified by the upstream
+    build system. (Closes: #1045696)
+  * Declare compliance with Debian Policy 4.6.2.
+  * Drop unneeded version constraints from (build) dependencies.
 
-  [ Yutao Meng ]
-  * Regulate version name
+ -- gregor herrmann <gregoa@debian.org>  Tue, 05 Mar 2024 11:20:24 +0100
 
- -- Yutao Meng <mengyutao@uniontech.com>  Tue, 21 Mar 2023 11:45:47 +0800
+libfcgi-perl (0.82+ds-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + libfcgi-perl: Drop Multi-Arch: same.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 20 Nov 2022 01:43:47 +0000
 
 libfcgi-perl (0.82+ds-1) unstable; urgency=medium
 
